@@ -1,1 +1,43 @@
- * {display: none}body {background: black;color: lime;font: monospace;}h1, h2, h3, h4, h5, h6, p, a, ul, li, ol, dl dd, dt, 
+ * {display: none}
+
+body {
+display: block;
+background: black;
+color: lime;
+font-family: monospace;
+font-size: 1.1em;
+width: 80em
+}
+
+html, h1, h2, h3, h4, h5, h6, p, ul, li, ol, dl dd, dt, pre {
+display: block;
+}
+
+div, section, aside, header, footer {
+display: block;
+}
+
+table {
+display: block
+}
+
+a, b, strong, em, i, span {
+display: inline
+}
+
+a:link, a:visited, a:active, a:hover {
+	text-decoration: none;
+	color: lime
+}
+
+/*counters for the link*/
+
+body {
+	counter-reset: section
+}
+
+a:after {
+  counter-increment: section;      /* Increment the section counter */
+  content: "[" counter(section) "]"; /* Display the counter */;
+padding-left: .5em
+}

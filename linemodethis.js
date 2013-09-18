@@ -39,6 +39,8 @@ var linemoder = {
 		ss.href = "https://raw.github.com/JohnAllsopp/linemoder/master/linemode.css";
 		document.getElementsByTagName("head")[0].appendChild(ss);
 		
+		alert()
+		
 	},
 	
 	addCommandLine: function(){

@@ -33,13 +33,14 @@ var linemoder = {
 	addLinemodeStyle: function() {
 		//add style for our linemode browser
 		
+		alert()
+		
 		var ss = document.createElement("link");
 		ss.type = "text/css";
 		ss.rel = "stylesheet";
 		ss.href = "https://raw.github.com/JohnAllsopp/linemoder/master/linemode.css";
 		document.getElementsByTagName("head")[0].appendChild(ss);
 		
-		alert()
 		
 	},
 	

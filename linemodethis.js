@@ -29,6 +29,18 @@ var linemoder = {
 		//now remove inline style
 		
 	},
+
+	removeJS: function() {
+		//remove the current JS from the document
+		
+		var scripts = document.querySelectorAll("script");
+		
+		for (var i=0; i < scripts.length; i++) {
+			scripts[i].parentNode.removeChild(styleSheets[i])
+		};
+						
+	},
+
 	
 	addLinemodeStyle: function() {
 		//add style for our linemode browser

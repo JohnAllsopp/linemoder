@@ -26,6 +26,8 @@ var linemoder = {
 			styleSheets[i].parentNode.removeChild(styleSheets[i])
 		};
 		
+		//now remove inline style
+		
 	},
 	
 	addLinemodeStyle: function() {
@@ -34,7 +36,7 @@ var linemoder = {
 		var ss = document.createElement("link");
 		ss.type = "text/css";
 		ss.rel = "stylesheet";
-		ss.href = "http://www.webdirections.org/linemode/linemode.css";
+		ss.href = "https://raw.github.com/JohnAllsopp/linemoder/master/linemode.css";
 		document.getElementsByTagName("head")[0].appendChild(ss);
 		
 	},

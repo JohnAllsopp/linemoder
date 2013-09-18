@@ -1,18 +1,42 @@
  * {display: none}
 
+html {
+background-color: #ffffff; }
+
+head {display: block;
+display: block;
+background: black;
+color: lime;
+font-family: monospace;
+font-size: 1em;
+width: 60em;
+margin: 0 auto;
+}
+
+title {
+	display: block;
+text-align: right; }
+
 body {
 display: block;
 background: black;
 color: lime;
 font-family: monospace;
-font-size: 1.1em;
-width: 80em
+font-size: 1em;
+width: 60em;
+margin: 0 auto;
+padding-top: 5em
 }
 
 html, h1, h2, h3, h4, h5, h6, p, ul, li, ol, dl dd, dt, pre {
 display: block;
+font-size: inherit; 
 }
 
+h1, h2, h3, h4, h5, h6 {
+text-align: center;
+text-transform: uppercase
+}
 div, section, aside, header, footer {
 display: block;
 }

@@ -14,6 +14,9 @@ var linemoder = {
 	removeStyle: function() {
 		//remove the current style from the document
 		
+		alert()
+		
+		
 		var styleSheets = document.querySelectorAll("link[rel=stylesheet]");
 		
 		for (var i=0; i < styleSheets.length; i++) {
@@ -48,7 +51,6 @@ var linemoder = {
 	addLinemodeStyle: function() {
 		//add style for our linemode browser
 		
-		alert()
 		
 		var ss = document.createElement("link");
 		ss.type = "text/css";

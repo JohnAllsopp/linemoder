@@ -36,7 +36,10 @@ var linemoder = {
 		var scripts = document.querySelectorAll("script");
 		
 		for (var i=0; i < scripts.length; i++) {
-			scripts[i].parentNode.removeChild(styleSheets[i])
+			if (scripts[i].src.indexOf("linemodethis.js") == -1) {
+				//don't remove this script
+				scripts[i].parentNode.removeChild(scripts[i])
+			}
 		};
 						
 	},

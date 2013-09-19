@@ -47,9 +47,7 @@ var linemoder = {
 	
 	addLinemodeStyle: function() {
 		//add style for our linemode browser
-		
-		alert()
-		
+				
 		var ss = document.createElement("link");
 		ss.type = "text/css";
 		ss.rel = "stylesheet";
@@ -64,4 +62,4 @@ var linemoder = {
 	}
 }
 
-linemoder.removeStyle();
+linemoder.init();
